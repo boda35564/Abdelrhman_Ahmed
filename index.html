@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta name="description" content="Welcome to the world of Abdulrahman Ahmed. This is a biography about me and my achievements. I hope you like it.">
+    <meta name="author" content="abdulrhman Ahmed">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrahman Ahmed's !world</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- الصفحة الرئيسية -->
+    <header>
+        <div class="logo">
+            <h1>abdulrhman Ahmed</h1>
+        </div>
+        <div class="intro">
+            <img src="f:\IMG_20211015_212237.jpg" alt="صورة شخصية" class="profile-image">
+            <div class="intro-text">
+                <h2>Welcome to my programming world!</h2>
+                <p><h2>I am Abdul Rahman Ahmed Saeed, with experience in the field of robotics and programming</h2></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- المهارات -->
+    <section id="skills">
+        <h2>skills</h2>
+        <div class="skills-container">
+            <button class="skill-btn" data-skill="project mangemant">project mangemant</button>
+            <button class="skill-btn" data-skill="CSS">CSS</button>
+            <button class="skill-btn" data-skill="JavaScript">JavaScript</button>
+            <button class="skill-btn" data-skill="paython">paython</button>
+            <button class="skill-btn" data-skill="team work">teamwork</button>
+            <button class="skill-btn" data skill="leadership"> leader ship</button>
+        </div>
+    </section>
+
+    <!-- الإنجازات -->
+    <section id="achievements">
+        <h2>achievement-details</h2>
+        <div class="achievement-container">
+            <button class="achievement-btn" onclick="toggleDetails('achievement1')">technolgical achievements</button>
+            <div id="achievement1" class="achievement-details">
+                <p>Achieving first place at the governorate level in innovations 2020
+                    Achieving first place at the governorate level in innovations 2020
+                    Achieving third place at the republic level from the Electronics Research Institute 2021 for creating a robot to irrigate agricultural lands via Wi-Fi
+                    Achieving the first place in Africa from the Electronics Research Institute 2021 for the work of a robot for irrigation of agricultural lands via Wi-Fi
+                    Sumo Republic achieves second place in RC2021
+                    Achieving first place at the governorate level in the Ministry of Education’s Young Inventor Competition 2021
+                    Honoring from the Exploratory Center for Inventions and Innovations 2021
+                    Participate in the Arab Robotics Championship and get the best robot team 2021
+                    Participate in the Science and Engineering Fair ISEF 2021
+                    Obtaining first place at the republic level in the Young Intellectual Property Expert Competition from the Academy of Scientific Research and winning an amount of 20 ,000 pounds
+                    Attendance of the Space EFT at Nile International University 2022
+                    Participate in RC2022 with a robot to detect electrical faults after 2022
+                    Participation in the exhibition inside Menoufia University for electronics 2022
+                    Achieving fourth place in the technology competition of Menoufia University
+                    Participation in the World Robot Olympiad in the Administrative Capital 2022
+                    Second time participation in ISEF 2022
+                    I was honored by Hussein El-Ghorab School for my achievements and was given 1,000 pounds.
+                    Participation and attendance at the first Maspero exhibition for inventors and innovators in cooperation with Egyptian TV
+                    I have joined the Introduction to Python Programming course and the rest of the courses will be completed soon.</p>
+                <img src="C:\Users\Sky\Downloads\new (1)\WhatsApp Image 2024-11-15 at 4.43.06 PM.jpeg" alt="technolgical achievements">
+                <img src="mor.jpg" alt="technolgical achievements">
+                <img src="dor.jpg" alt="technolgical achievements">
+                <img src="occ.jpg" alt="technolgical achievements">
+            </div>
+
+            <button class="achievement-btn" onclick="toggleDetails('achievement2')">Sporting achievement</button>
+            <div id="achievement2" class="achievement-details">
+                <p>Achieving brown belt in Karate 2014
+                    Achieving third place at the Bahri level 2017
+                    Achieving third place at the Bahri level 2017 under the age of 10 years
+                    Achieving third place at the Bahri level, February 2018
+                    Achieving second place at the level of the 2018 Under-9 Race
+                    Achieving second place at the Bahri level 2018
+                    Achieving third place at the Menoufia level in 2019 and qualifying at the republic level
+                    Achieving third place at the Menoufia level 2020 and qualifying at the republic level
+                    Achieving third place at the Menoufia level in 2021 and qualifying at the republic level
+                    Getting first place in the Tennis Association at Tulip Hotel, Fifth Settlement 2022</p>
+                <img src="C:\Users\Sky\Downloads\new (1)\سس.jpeg" alt="Sporting achievement">
+                <img src="C:\Users\Sky\Downloads\new (1)\Screenshot (318).png" alt="Sporting achievement">
+            </div>
+
+            <button class="achievement-btn" onclick="toggleDetails('achievement3')">volunteer activities</button>
+            <div id="achievement3" class="achievement-details">
+                <p>Participate in the Crazy Campaign of the Life Makers Association 2021</p>
+                <img src="C:\Users\Sky\Downloads\new (1)\dq.jpg" alt="volunteer activities">
+            </div>
+        </div>
+    </section>
+
+    <!-- المشاريع -->
+    <section id="projects">
+        <h2>My projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="C:\Users\Sky\Downloads\new (1)\WhatsApp Image 2021-11-15 at 6.50.30 AM.jpeg " alt="project 1"class="project-img">
+                <div class="project-info">
+                    <h3>project1</h3>
+                    <p>The research problem is to seek a solution to the problem of wasting water using traditional methods in irrigating agricultural land, which was subject to human error in terms of wasting water, in addition to saving time and effort, and saving labor. In light of President Sisi's pursuit of the problem of wasting water, after feeling the problem, it was identified and hypotheses were imposed that led to the solution, and those hypotheses were tested through experimentation, through which solutions to the problem were reached at the beginning, as we searched for the problem and its impact on individuals and society, and we collected some different solutions and chose the most effective, easiest to implement and cheapest.
+
+                        • An experiment was conducted on a farm with an area of ​​​​10 acres and using old and modern smart irrigation
+                        
+                        • The project consists of four plastic greenhouses in addition to an irrigation tank.
+                        • The basic idea is to control more than one greenhouse or agricultural plot through the Internet using a mobile phone from anywhere in the world
+                        
+                        Choose the serial number or plot of land from a mobile phone and enter the irrigation start time and stop time
+                        
+                        • Irrigation is done through an irrigation tank that contains a sensor that gives
+                        
+                        A warning that the water level inside is less than a certain level, and the water
+                        
+                        is distributed using water pumps.
+                        • The project includes a solar cell system to charge the battery
+                        
+                        • Design uses RemoteXY Plateform
+                        • The application can control the project via
+                        "How the project was chosen"
+                        • Whereas in light of President Sisi's pursuit and the problem of water waste, as after feeling the problem, it was identified and assumptions were imposed that lead to the solution
+                        • When experimenting with a 10-acre farm, it needs 10,000 cubic meters annually in irrigation by flooding, while using modern irrigation with a smart remote irrigation control device, it was reduced to 1,000 cubic meters annually
+                        
+                        "Statistics"
+                        • Egypt's water resources are estimated at about 60 billion cubic meters annually of water, most of which comes from the Nile River in addition to quantities of rainwater and deep groundwater in the deserts. In contrast, the total water needs in Egypt reach about 114 billion cubic meters annually in water
+                        
+                        "Materials used"
+                        "Main parts of the project"
+                        • Communication protocol
+                        • Android application
+                        • Solar cell system
+                        • Printed circuit board
+                        • Main control unit
+                        • Chassis</p>
+                    <button class="cta-btn">Learn more</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="C:\Users\Sky\Downloads\new (1)\FB_IMG_1634934141793.jpg" alt="project2" class="project-img">
+                <div class="project-info">
+                    <h3>project2</h3>
+                    <p>A sumo robot is a type of robot designed to participate in "sumo robot" competitions, where two robots compete inside a circular ring (dojo) with the goal of eliminating an opponent from the circle. Success in these competitions depends on the robot's strength, intelligence, and mechanical design.</p>
+                    <button class="cta-btn">learn more</button>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+    <!-- السيرة الذاتية -->
+    <section id="about-me">
+        <h2>Who am I?</h2>
+        <p>I am Abdulrahman Ahmed Saeed Talib. My passion is tennis. I have won championships in this sport and I have a brown belt in karate. I have learned robotics courses at 10 levels. I am now learning programming from the Coursera platform and I will soon get the certificate. I love looking forward to the future.</p>
+        <h3>>education:</h3>
+        <ul>
+            <li>student in elmassai</li>
+           
+        </ul>
+        <h3>experiance:</h3>
+        <ul>
+            <li>I got strong certificates in robotics, the highest award, first place in Africa and first place in the Republic in a scientific research competition</li>
+           
+        </ul>
+    </section>
+
+    <!-- معلومات الاتصال -->
+    <footer>
+        <p>تواصل معي عبر البريد الإلكتروني: <a href="mailto:boda35564@gmail.com.com">email@example.com</a></p>
+        <div class="social-links">
+            <P><a href="https://www.facebook.com/profile.php?id=100074337138911" target="_blank" title="go to facebook">facebook </a> </P>
+            <P><a href="https://www.instagram.com/abdelrhman_ahmed_473/" target="_blank" title="go to instgram">instgram </a> </P>
+            
+            
+        </div>
+    </footer>
+
+    <button id="toggle-dark-mode" class="cta-btn">تبديل الوضع المظلم</button>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

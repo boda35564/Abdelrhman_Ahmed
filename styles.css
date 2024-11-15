@@ -1,0 +1,282 @@
+/* تعيين إعدادات مبدئية */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* الوضع المظلم */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode .cta-btn {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+body.dark-mode footer {
+    background-color: #1c1c1c;
+}
+
+body.dark-mode #projects {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* الهيدر */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 60px;
+    background-color: #000; /* تغيير الخلفية إلى اللون الأسود */
+}
+
+header .logo h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff; /* تغيير لون النص إلى الأبيض */
+    margin: 0;
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.7);
+}
+
+header .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 5px solid #fff; /* تغيير حدود الصورة إلى الأبيض */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+header .profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.7);
+}
+
+header .intro-text h2,
+header .intro-text p {
+    color: #fff; /* تغيير النصوص في الـ intro إلى الأبيض */
+}
+
+header .profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.7);
+}
+
+/* زر CTA */
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* المهارات */
+#skills {
+    background-color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-btn {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill-btn:hover {
+    background-color: #007BFF;
+}
+
+/* الإنجازات */
+#achievements {
+    background-color: #2b2b2b;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.achievement-btn {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.achievement-btn:hover {
+    background-color: #007BFF;
+}
+
+.achievement-details {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.achievement-details img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* المشاريع */
+#projects {
+    padding: 60px 20px;
+    background-color: #333;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    background-color: #444;
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.project-info .cta-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* السيرة الذاتية */
+#about-me {
+    padding: 60px 20px;
+    background-color: #000000;
+    text-align: center;
+}
+
+#about-me h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+#about-me ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about-me ul li {
+    font-size: 1.2rem;
+    color: #ffe6e6;
+    margin: 10px 0;
+}
+
+/* تذييل الموقع */
+footer {
+    background-color: #444;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #007BFF;
+}
